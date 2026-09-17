@@ -51,8 +51,6 @@ model probability when available.
   `cell_temperature_max`     Maximum cell temperature
   `BMS_warning_count`        Battery Management System warning count
 
-> **Important:** Feature names and ordering must match the features
-> expected by the trained model artifact.
 
 ------------------------------------------------------------------------
 
@@ -97,14 +95,13 @@ experiment:
   **ROC-AUC**       **98.23%**
 
 ### Confusion Matrix
-
+```
                              Predicted: No Failure   Predicted: Failure
   ------------------------ ----------------------- --------------------
-  **Actual: No Failure**             **1534 (TN)**          **10 (FP)**
-  **Actual: Failure**                  **38 (FN)**          **56 (TP)**
-
+  Actual: No Failure                 1534 (TN)           10 (FP)
+  Actual: Failure                      38 (FN)           56 (TP)
+```
 > Evaluation metrics are presentation metrics from the evaluated model.
-> Live predictions always come from the saved model.
 
 ------------------------------------------------------------------------
 
@@ -286,9 +283,3 @@ the model and does not generate predictions using frontend rules.
     an explicit error rather than fabricating a result.
 
 ------------------------------------------------------------------------
-
-::: {align="center"}
-### ⚡ EV Battery Failure Prediction System
-
-**Scikit-learn × FastAPI × React**
-:::
