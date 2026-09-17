@@ -1,6 +1,6 @@
 # ⚡ EV Battery Failure Prediction System
 
-::: {align="center"}
+
 ### Machine Learning--Powered EV Battery Diagnostics
 
 **Real-time battery failure risk prediction through a modern full-stack
